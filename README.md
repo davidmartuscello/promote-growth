@@ -1,18 +1,53 @@
 
 ## Promoting Growth of Stack Exchange Sites
 
+Stack Exchange is a collection of question answering
+websites with a unified structure and a single user base. The
+goal for this project is to provide an application for the clients to
+grow their new website based on target marketing and relevant
+cross-site promotion. A client will use the application to identify
+the potential existing users on other Stack Exchange sites and
+Reddit and send them a message invitation to sign up on the
+client’s new website. This will help to attract new users to visit
+the clients’ website.
 
-ABSTRACT
+## File Descriptions
+
+- **XMLfunctions.scala**: Uses the scala xml library to parse the stack exchange xml files and select, filter, and clean the data
+- **ParseXML.scala**: Select the stack exchange websites to be analyzed and parse them using XMLfunctions.scala
+- **CreateTFIDFdataframe.scala**:
+- **ComputeUserSimilarity.scala**:
 
 
-## Files
-
-- **XMLfunctions.scala**: Uses the scala xml library to parse the input files and select, filter, and clean the necessary data
-- **ParseXML.scala**: - Select the stack exchange websites to be analyzed and parse them using XMLfunctions.scala
 
 
+## Instructions to Run
+
+Download jars for the Stanford CoreNLP Library and the Spark Wrapper for CoreNLP.
+```
+wget http://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.9.1/stanford-corenlp-3.9.1.jar
+wget http://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.9.1/stanford-corenlp-3.9.1-models.jar
+wget http://dl.bintray.com/spark-packages/maven/databricks/spark-corenlp/0.4.0-spark2.4-scala2.11/spark-corenlp-0.4.0-spark2.4-scala2.11.jar
+```
+Launch the spark 2.X shell while loading the jar files
+```
+spark2-shell --jars stanford-corenlp-3.9.1-models.jar,spark-corenlp-0.4.0-spark2.4-scala2.11.jar,stanford-corenlp-3.9.1.jar
+```
+
+Run the files in the following order using the "load:" command
+```
+:load /path/to/files/XMLfunctions.scala
+:load /path/to/files/ParseXML.scala
+:load /path/to/files/
+:load /path/to/files/
+:load /path/to/files/
+```
 
 
+.
+.
+.
+.
 
 ---------------------------------------------------------------
 REFERENCE GUIDE:
