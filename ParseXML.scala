@@ -3,9 +3,9 @@ val siteList = Seq("fitness.stackexchange.com.7z", "health.stackexchange.com.7z"
 
 val firstRDD = getTextDF(siteList(0))
 val secondRDD = getTextDF(siteList(1))
-val thirdRDD = getTextDF(siteList(2))
-val fourthRDD = getTextDF(siteList(3))
-val combinedRDD = firstRDD.union(secondRDD).union(thirdRDD).union(fourthRDD)
+//val thirdRDD = getTextDF(siteList(2))
+//val fourthRDD = getTextDF(siteList(3))
+val combinedRDD = firstRDD.union(secondRDD)//.union(thirdRDD).union(fourthRDD)
 val reducedRDD = combinedRDD.reduceByKey((a: String,b: String) => a + b)
 reducedRDD.take(1)
 
