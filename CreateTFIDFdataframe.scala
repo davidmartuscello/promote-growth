@@ -1,3 +1,7 @@
+import org.apache.spark.ml.feature.{HashingTF, IDF}
+import org.apache.spark.ml.feature.{RegexTokenizer, Tokenizer}
+import org.apache.spark.ml.feature.StopWordsRemover
+import org.apache.spark.ml.feature.{CountVectorizer, CountVectorizerModel}
 import org.apache.spark.sql.functions._
 import com.databricks.spark.corenlp.functions._
 
