@@ -17,7 +17,7 @@ val proposalString = proposalLines.reduce( (x,y) => x+y )
 
 val proposalKey = sc.parallelize( Seq( ("PROPOSAL", proposalString) ) )
 
-val finalRDD = textRDD.union(proposalKey)
+val finalRDD = reducedRDD.union(proposalKey)
 
 // val siteList = Seq("fitness.stackexchange.com.7z", "health.stackexchange.com.7z","biology.stackexchange.com.7z","graphicdesign.stackexchange.com.7z")
 // val siteListRDD = sc.parallelize(siteList)

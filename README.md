@@ -34,7 +34,7 @@ Launch the spark 2.X shell while loading the jar files
 spark2-shell --jars stanford-corenlp-3.9.1-models.jar,spark-corenlp-0.4.0-spark2.4-scala2.11.jar,stanford-corenlp-3.9.1.jar
 ```
 
-Run the files in the following order using the "load:" command
+Run the files in the following order using the "load:" command (e.g. :load /home/dm4350/project/promote-growth/XMLfunctions.scala)
 ```
 :load /path/to/files/XMLfunctions.scala
 :load /path/to/files/ParseXML.scala
