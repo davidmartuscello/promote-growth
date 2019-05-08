@@ -23,8 +23,11 @@ the clients’ website.
 
 ### REDDIT USER ANALYSIS:
 
-
-
+- **matchingRedditUser.scala**
+  - Use Scala's RegexTokenizer and StopWordsRemover to tokenize each user's post
+  - Use Scala's CountVectorizer and IDF to create TFIDF vectors
+  - Use Scala's LDA to create topics and generate user's vector based on all of the topics
+  - Use Breeze's linalg to compute Cosine similarity score between Reddit users and Stack Exchange proposal
 
 ### UTILITY FILES:
 
@@ -36,9 +39,6 @@ the clients’ website.
 - **GenerateHistogram**: Python notebook to generate histogram using D3 via Bokeh
 - **HistogramOfSimilarityScores**: Histogram showing scores for different users
 
-### SCREENSHOTS:
-
-- **
 
 
 ## Instructions to Run
@@ -61,6 +61,11 @@ Run the files in the following order using the "load:" command (e.g. :load /home
 :load /path/to/files/CreateTFIDFdataframe.scala
 :load /path/to/files/ComputeUserSimilarity.scala
 :load /path/to/files/TopicModeling.scala
+```
+and
+```
+:load /path/to/files/matchingRedditUser.scala
+
 ```
 
 
