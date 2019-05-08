@@ -7,19 +7,13 @@ import com.databricks.spark.corenlp.functions._
 
 val rawtextDF = finalRDD.toDF("username", "raw_text").filter($"raw_text" =!= "")
 
-//BROKEN LEMMATIZATION FEATURE
-// val cleanDF = rawtextDF.select('username, cleanxml('raw_text).as('text)).select('username, tokenize('text).as('toks)).withColumn("toks", combSen($"toks")).withColumn("arrayLen", size($"toks")).filter($"arrayLen" =!= 0).drop("arrayLen")
-// val makeSTRING = udf((x:Seq[String]) => x.mkString(" "))
-// val almostLemmaDF = cleanDF.withColumn("text", makeSTRING($"toks") ).drop("toks")
-// val rawlemmasDF = almostLemmaDF.select('username, lemma('text).as('lemmas) )// .select('id, explode(ssplit('doc)).as('sen)).....tokenize('sen).as('words)
+//BROKEN LEMMATIZATION FEATURE ----------------------
+// val cleanDF = rawtextDF.select('username, cleanxml('raw_text).as('text))
+// val rawlemmasDF = cleanDF.select('username, lemma('text).as('lemmas) )
 // rawlemmasDF.show(5)
-//
-// val cleanDF = rawtextDF.select('username, cleanxml('raw_text).as('doc)).select('username, explode(ssplit('doc)).as('sen)).select('username, tokenize('sen).as('toks))
-//
 // val rawLemmasDF = cleanDF.select('username,'lemmas).map( (x: String ,y: Array[String] ) => (x,y) ).reduceByKey(a,b => a++b).toDF("username","lemmas")
-
-// val combSen = udf((x:Seq[String]) => x.filterNot(_.matches("\\W+")))
 // val cleanDF = toksDF.withColumn("toks", combSen($"toks"))
+//-------------------
 
 val textDF = rawtextDF.select('username, cleanxml('raw_text).as('text))//.select('username, tokenize('text).as('toks))
 

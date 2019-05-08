@@ -1,5 +1,5 @@
 
-## Promoting Growth of Stack Exchange Sites
+# Promoting Growth of Stack Exchange Sites
 
 Stack Exchange is a collection of question answering
 websites with a unified structure and a single user base. The
@@ -13,7 +13,7 @@ the clients’ website.
 
 ## File Descriptions
 
-###STACK EXCHANGE USER ANALYSIS
+### STACK EXCHANGE USER ANALYSIS
 
 - **XMLfunctions.scala**: Uses the scala xml library to parse the stack exchange xml files and select, filter, and clean the data
 - **ParseXML.scala**: Select the stack exchange websites to be analyzed and parse them using the functions defined in XMLfunctions.scala
@@ -21,17 +21,24 @@ the clients’ website.
 - **ComputeUserSimilarity.scala**: Use the TFIDF dataframe to compute similarity score between each user and the "PROPOSAL" website
 - **TopicModeling.scala**: Use the LDA clustering model to extract topics from the dataset as another way to analyze the data
 
-###REDDIT USER ANALYSIS:
-
-- **BLAH**
+### REDDIT USER ANALYSIS:
 
 
-###UTILITY FILES:
+
+
+### UTILITY FILES:
 
 - **DownloadFilesToScratch(BATCH)**: Batch file to download the stack exchange files (~59 GB)
 - **ExtractFilesToHDFS**: Bash command to extract all of the zipped files and load them into HDFS
 
+### VISUALIZATION:
 
+- **GenerateHistogram**: Python notebook to generate histogram using D3 via Bokeh
+- **HistogramOfSimilarityScores**: Histogram showing scores for different users
+
+### SCREENSHOTS:
+
+- **
 
 
 ## Instructions to Run
@@ -55,8 +62,6 @@ Run the files in the following order using the "load:" command (e.g. :load /home
 :load /path/to/files/ComputeUserSimilarity.scala
 :load /path/to/files/TopicModeling.scala
 ```
-
-## Screenshots
 
 
 
