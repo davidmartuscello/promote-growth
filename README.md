@@ -31,14 +31,15 @@ the clients’ website.
 
 ### UTILITY FILES:
 
-- **DownloadFilesToScratch(BATCH)**: Batch file to download the stack exchange files (~59 GB)
-- **ExtractFilesToHDFS**: Bash command to extract all of the zipped files and load them into HDFS
+- **DownloadFilesToScratch(BATCH).sh**: Batch file to download the stack exchange files (~59 GB)
+- **ExtractFilesToHDFS.bash**: Bash command to extract all of the zipped files and load them into HDFS
+- **DownloadRedditFiles.s**: Batch file to download the stack exchange files (>1 TB)
+- **RedditUnzipToHDFS.s**: extract all of the zipped files and load them into HDFS
 
 ### VISUALIZATION:
 
 - **GenerateHistogram**: Python notebook to generate histogram using D3 via Bokeh
 - **HistogramOfSimilarityScores**: Histogram showing scores for different users
-
 
 
 ## Instructions to Run
