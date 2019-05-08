@@ -43,6 +43,12 @@ Run the files in the following order using the "load:" command (e.g. :load /home
 :load /path/to/files/
 ```
 
+sortedUsers.coalesce(1).write.csv("hdfs:///user/dm4350/project/coalesce1")
+
+hdfs dfs -ls /user/dm4350/project/coalesce1
+hdfs dfs -copyToLocal /user/dm4350/project/coalesce1/ /home/dm4350/project/
+
+
 
 .
 .

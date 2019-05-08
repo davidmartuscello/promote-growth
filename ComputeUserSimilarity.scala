@@ -18,7 +18,7 @@ val pRDD = vectorRDD.filter(x => x._1 == "PROPOSAL")
 val p = pRDD.take(1)(0)._2
 
 //Compute Individual Similarity Score by Username:
-val uRDD = testrdd.filter(x => x._1 == "daniel")
+val uRDD = vectorRDD.filter(x => x._1 == "daniel")
 val u = uRDD.take(1)(0)._2
 similarity(u,p)
 
@@ -26,4 +26,5 @@ similarity(u,p)
 val resultsRDD = vectorRDD.map { case (u, v) => (u, similarity(v,p)) }
 
 //Display Ranked List of Most Similar Users
-resultsRDD.sortBy(_._2, false).toDF.show(5)
+val sortedUsers = resultsRDD.sortBy(_._2, false).toDF("Username", "SimilarityScore")
+sortedUsers.show(5)

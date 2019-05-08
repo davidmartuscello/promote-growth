@@ -27,7 +27,10 @@ val textDF = rawtextDF.select('username, cleanxml('raw_text).as('text))//.select
 val regexTokenizer = new RegexTokenizer().setInputCol("text").setOutputCol("toks").setPattern("\\W+")
 val toksDF = regexTokenizer.transform(textDF)
 
-//Remove Stopwords
+//Custom Function to remove punctuation and words less than length 3
+val combSen = udf( (x:Seq[String]) => x.filterNot(_.matches("\\W+")).filterNot(_.length() < 3) )
+
+//Remove Stopwords and Punctuation
 val remover = new StopWordsRemover().setInputCol("toks").setOutputCol("words")
 val wordsFiltered = remover.transform(toksDF).withColumn("words", combSen($"words")).withColumn("arrayLen", size($"words")).filter($"arrayLen" =!= 0).drop("arrayLen")//.withColumn("arrayLen", size($"words")).filter($"arrayLen" =!= 0).drop("arrayLen")//.filter($"words".length =!= 0)
 wordsFiltered.show(5)
