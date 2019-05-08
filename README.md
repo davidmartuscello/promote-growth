@@ -13,10 +13,23 @@ the clients’ website.
 
 ## File Descriptions
 
+###STACK EXCHANGE USER ANALYSIS
+
 - **XMLfunctions.scala**: Uses the scala xml library to parse the stack exchange xml files and select, filter, and clean the data
-- **ParseXML.scala**: Select the stack exchange websites to be analyzed and parse them using XMLfunctions.scala
-- **CreateTFIDFdataframe.scala**:
-- **ComputeUserSimilarity.scala**:
+- **ParseXML.scala**: Select the stack exchange websites to be analyzed and parse them using the functions defined in XMLfunctions.scala
+- **CreateTFIDFdataframe.scala**: clean the data using spark-corenlp and use spark.ml to create a TFIDF dataframe
+- **ComputeUserSimilarity.scala**: Use the TFIDF dataframe to compute similarity score between each user and the "PROPOSAL" website
+- **TopicModeling.scala**: Use the LDA clustering model to extract topics from the dataset as another way to analyze the data
+
+###REDDIT USER ANALYSIS:
+
+- **BLAH**
+
+
+###UTILITY FILES:
+
+- **DownloadFilesToScratch(BATCH)**: Batch file to download the stack exchange files (~59 GB)
+- **ExtractFilesToHDFS**: Bash command to extract all of the zipped files and load them into HDFS
 
 
 
@@ -38,10 +51,18 @@ Run the files in the following order using the "load:" command (e.g. :load /home
 ```
 :load /path/to/files/XMLfunctions.scala
 :load /path/to/files/ParseXML.scala
-:load /path/to/files/
-:load /path/to/files/
-:load /path/to/files/
+:load /path/to/files/CreateTFIDFdataframe.scala
+:load /path/to/files/ComputeUserSimilarity.scala
+:load /path/to/files/TopicModeling.scala
 ```
+
+## Screenshots
+
+
+
+
+
+<!---
 
 sortedUsers.coalesce(1).write.csv("hdfs:///user/dm4350/project/coalesce1")
 
@@ -116,3 +137,4 @@ Give proper credits. This could be a link to any repo which inspired you to buil
 A short snippet describing the license (MIT, Apache etc)
 
 MIT © [Yourname]()
+-->
