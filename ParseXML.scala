@@ -1,10 +1,12 @@
 
-val siteList = Seq("languagelearning.stackexchange.com.7z", "beer.stackexchange.com.7z","coffee.stackexchange.com.7z","health.stackexchange.com.7z")
+//val siteList = Seq("languagelearning.stackexchange.com.7z", "beer.stackexchange.com.7z","coffee.stackexchange.com.7z","health.stackexchange.com.7z")
+val siteList = Seq("biology.stackexchange.com.7z", "woodworking.stackexchange.com.7z","coffee.stackexchange.com.7z","health.stackexchange.com.7z")
+
 
 val firstRDD = getTextDF(siteList(0))
 val secondRDD = getTextDF(siteList(1))
-val thirdRDD = getTextDF(siteList(2))
-val combinedRDD = firstRDD.union(secondRDD).union(thirdRDD)
+//val thirdRDD = getTextDF(siteList(2))
+val combinedRDD = firstRDD.union(secondRDD)//.union(thirdRDD)
 val reducedRDD = combinedRDD.reduceByKey((a: String,b: String) => a + b)
 reducedRDD.take(1)
 

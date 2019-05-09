@@ -26,5 +26,7 @@ similarity(u,p)
 val resultsRDD = vectorRDD.map { case (u, v) => (u, similarity(v,p)) }
 
 //Display Ranked List of Most Similar Users
-val sortedUsers = resultsRDD.sortBy(_._2, false).toDF("Username", "SimilarityScore")
+
+val sortedRDD = resultsRDD.sortBy(_._2, false)
+val sortedUsers = sortedRDD.toDF("Username", "SimilarityScore")
 sortedUsers.show(5)
