@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Target Users</h1>
+
+<p>This graph shows the most likely users of your new website!</p>
+
+<h3> Health Site - Users Analysis</h3>
+
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="c8b4455e-6281-453b-a78d-ee095ce7ffa9"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="5496">
+          {"6817eb31-bede-4a4e-84e1-0b17ec1cc48c":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"5411","type":"PanTool"},{"id":"5412","type":"WheelZoomTool"},{"id":"5413","type":"BoxZoomTool"},{"id":"5414","type":"SaveTool"},{"id":"5415","type":"ResetTool"},{"id":"5416","type":"HelpTool"}]},"id":"5417","type":"Toolbar"},{"attributes":{"below":[{"id":"5402","type":"CategoricalAxis"}],"left":[{"id":"5406","type":"LinearAxis"}],"outline_line_color":{"value":null},"renderers":[{"id":"5402","type":"CategoricalAxis"},{"id":"5405","type":"Grid"},{"id":"5406","type":"LinearAxis"},{"id":"5410","type":"Grid"},{"id":"5419","type":"BoxAnnotation"},{"id":"5430","type":"GlyphRenderer"}],"title":{"id":"5391","type":"Title"},"toolbar":{"id":"5417","type":"Toolbar"},"x_range":{"id":"5394","type":"FactorRange"},"x_scale":{"id":"5398","type":"CategoricalScale"},"y_range":{"id":"5396","type":"DataRange1d"},"y_scale":{"id":"5400","type":"LinearScale"}},"id":"5392","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":1,"plot":{"id":"5392","subtype":"Figure","type":"Plot"},"ticker":{"id":"5407","type":"BasicTicker"}},"id":"5410","type":"Grid"},{"attributes":{"plot":null,"text":"Histogram of Similarity Scores"},"id":"5391","type":"Title"},{"attributes":{},"id":"5435","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"5426","type":"ColumnDataSource"}},"id":"5431","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"SimilarityScore"},"width":{"value":1},"x":{"field":"Username"}},"id":"5429","type":"VBar"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"white"},"top":{"field":"SimilarityScore"},"width":{"value":1},"x":{"field":"Username"}},"id":"5428","type":"VBar"},{"attributes":{"formatter":{"id":"5435","type":"BasicTickFormatter"},"plot":{"id":"5392","subtype":"Figure","type":"Plot"},"ticker":{"id":"5407","type":"BasicTicker"}},"id":"5406","type":"LinearAxis"},{"attributes":{},"id":"5433","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"data":{"SimilarityScore":{"__ndarray__":"V4G2MjXn0j+uKi231+3RP8EJbdrY5tE/d98l+GzV0D/0ZlbqwEXQP0IzeknWC9A/SEyXFDGczz9ge3Di7lnPP6fEorXP6M4/Qw4w4GPnzj+nZDsCVvLNP7oO9a/Uu80/t5RWTukhzT+WfRyPCQDNPxzuEYZH+8w/sQbGCC7SzD9EeroR06TMP7espTWAdsw/2/jV0GtyzD/XOm2qHV7MP/8maPuXess/Gg/jc8Aqyz83alXUK9bKP9DseRC2wMo/Su2PpYeAyj/cKk1ErzLKPw==","dtype":"float64","shape":[26]},"Site":["health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health","health"],"Username":["YviDe","anongoodnurse","Kate Gregory","DoctorWhom","JohnP","Carey Gregory","kenorb","Jan","Shlublu","LangLangC","Narusan","TheEnvironmentalist","rumtscho","Lucky","Dave Liu","HDE 226868","Graham Chiu","Atl LED","Pobrecita","Count Iblis","arkiaamu","Butterfly and Bones","Susan","Prince","Pills N Pillows","Chris"],"index":[1,2,3,4,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27]},"selected":{"id":"5438","type":"Selection"},"selection_policy":{"id":"5437","type":"UnionRenderers"}},"id":"5426","type":"ColumnDataSource"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"5419","type":"BoxAnnotation"},{"attributes":{"callback":null,"factors":["YviDe","anongoodnurse","Kate Gregory","DoctorWhom","JohnP","Carey Gregory","kenorb","Jan","Shlublu","LangLangC","Narusan","TheEnvironmentalist","rumtscho","Lucky","Dave Liu","HDE 226868","Graham Chiu","Atl LED","Pobrecita","Count Iblis","arkiaamu","Butterfly and Bones","Susan","Prince","Pills N Pillows","Chris"],"range_padding":0.05},"id":"5394","type":"FactorRange"},{"attributes":{},"id":"5398","type":"CategoricalScale"},{"attributes":{},"id":"5414","type":"SaveTool"},{"attributes":{},"id":"5438","type":"Selection"},{"attributes":{"axis_label":"Username","formatter":{"id":"5433","type":"CategoricalTickFormatter"},"major_label_orientation":1.2,"plot":{"id":"5392","subtype":"Figure","type":"Plot"},"ticker":{"id":"5403","type":"CategoricalTicker"}},"id":"5402","type":"CategoricalAxis"},{"attributes":{"overlay":{"id":"5419","type":"BoxAnnotation"}},"id":"5413","type":"BoxZoomTool"},{"attributes":{},"id":"5411","type":"PanTool"},{"attributes":{},"id":"5407","type":"BasicTicker"},{"attributes":{"data_source":{"id":"5426","type":"ColumnDataSource"},"glyph":{"id":"5428","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5429","type":"VBar"},"selection_glyph":null,"view":{"id":"5431","type":"CDSView"}},"id":"5430","type":"GlyphRenderer"},{"attributes":{},"id":"5412","type":"WheelZoomTool"},{"attributes":{},"id":"5403","type":"CategoricalTicker"},{"attributes":{},"id":"5400","type":"LinearScale"},{"attributes":{},"id":"5437","type":"UnionRenderers"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"5392","subtype":"Figure","type":"Plot"},"ticker":{"id":"5403","type":"CategoricalTicker"}},"id":"5405","type":"Grid"},{"attributes":{},"id":"5415","type":"ResetTool"},{"attributes":{"callback":null,"start":0},"id":"5396","type":"DataRange1d"},{"attributes":{},"id":"5416","type":"HelpTool"}],"root_ids":["5392"]},"title":"Bokeh Application","version":"1.0.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('5496').textContent;
+                  var render_items = [{"docid":"6817eb31-bede-4a4e-84e1-0b17ec1cc48c","roots":{"5392":"c8b4455e-6281-453b-a78d-ee095ce7ffa9"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html><!DOCTYPE html>
+<html>
+<body>
+
+<h3> Woodworking Site - Users Analysis</h3>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="a97ab28b-ae17-4f6d-b236-5c53931cadec"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="5602">
+          {"02bb0be3-8a11-4cfc-8ff6-49d9bd7691b9":{"roots":{"references":[{"attributes":{"axis_label":"Username","formatter":{"id":"5539","type":"CategoricalTickFormatter"},"major_label_orientation":1.2,"plot":{"id":"5498","subtype":"Figure","type":"Plot"},"ticker":{"id":"5509","type":"CategoricalTicker"}},"id":"5508","type":"CategoricalAxis"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"5498","subtype":"Figure","type":"Plot"},"ticker":{"id":"5509","type":"CategoricalTicker"}},"id":"5511","type":"Grid"},{"attributes":{"callback":null,"start":0},"id":"5502","type":"DataRange1d"},{"attributes":{},"id":"5517","type":"PanTool"},{"attributes":{"callback":null,"factors":["Graphus","FreeMan","keshlam","grfrazee","bowlturner","rob","Dave Smylie","Aloysius Defenestrate","mmathis","Daniel B.","Ljk2000","Charlie Kilian","SaSSafraS1232","jdv","Ast Pace","scanny","Stoppal","Ecnerwal","WhatEvil","Martin Bonner","Doresoom","dfife","Treow Wyrhta","Jambo","Otto","ewm","Eli Iser","Jacob Edmond","3Dave","jbord39","ww_init_js","Ashlar","Peter Grace","WhatRoughBeast","NipFu","LeeG","Doov","LosManos","TX Turner"],"range_padding":0.05},"id":"5500","type":"FactorRange"},{"attributes":{},"id":"5509","type":"CategoricalTicker"},{"attributes":{},"id":"5506","type":"LinearScale"},{"attributes":{},"id":"5522","type":"HelpTool"},{"attributes":{"data_source":{"id":"5532","type":"ColumnDataSource"},"glyph":{"id":"5534","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5535","type":"VBar"},"selection_glyph":null,"view":{"id":"5537","type":"CDSView"}},"id":"5536","type":"GlyphRenderer"},{"attributes":{},"id":"5513","type":"BasicTicker"},{"attributes":{"formatter":{"id":"5541","type":"BasicTickFormatter"},"plot":{"id":"5498","subtype":"Figure","type":"Plot"},"ticker":{"id":"5513","type":"BasicTicker"}},"id":"5512","type":"LinearAxis"},{"attributes":{},"id":"5544","type":"Selection"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"white"},"top":{"field":"SimilarityScore"},"width":{"value":1},"x":{"field":"Username"}},"id":"5534","type":"VBar"},{"attributes":{},"id":"5520","type":"SaveTool"},{"attributes":{"source":{"id":"5532","type":"ColumnDataSource"}},"id":"5537","type":"CDSView"},{"attributes":{},"id":"5518","type":"WheelZoomTool"},{"attributes":{},"id":"5541","type":"BasicTickFormatter"},{"attributes":{},"id":"5543","type":"UnionRenderers"},{"attributes":{},"id":"5504","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"SimilarityScore"},"width":{"value":1},"x":{"field":"Username"}},"id":"5535","type":"VBar"},{"attributes":{"callback":null,"data":{"SimilarityScore":{"__ndarray__":"ALQeoWqmxD9BTHbve4TDPynqE66UUsM/Y837T8oJwz8QXAU0hanCP6SN5q7xq8E/epoc7cGqwT8QAmiqNkHBPyqsTeJuKcE/SbUuIa7WwD8fLK8s57zAP2kWT85KssA/D/z6dfOCwD96Z7YbWIDAPzFamx3IccA/kDzZVM1TwD/pjLvbFjbAP/8NwGsBKsA/QKdqrsADwD/ZBHybtpG/P0+2UaHs870/mcAGJonnvT9qiw4d0t29PwyufnI1u70/QBbSpE92vT9ONEveVey8PxLVyj7p0Lw/gD2Ic4e1vD8YHjDf4Rm8P7EYwi/vC7w/Dp+L5WPmuz/G5MdBR3y7PwnBlvE+Nrs/ZtaBjAoIuz8UJzsI2ei6P5QQnjt51bo/M2g/jxUhuj+YwoyYIMq5PymiCmHAxLk/","dtype":"float64","shape":[39]},"Site":["woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking","woodworking"],"Username":["Graphus","FreeMan","keshlam","grfrazee","bowlturner","rob","Dave Smylie","Aloysius Defenestrate","mmathis","Daniel B.","Ljk2000","Charlie Kilian","SaSSafraS1232","jdv","Ast Pace","scanny","Stoppal","Ecnerwal","WhatEvil","Martin Bonner","Doresoom","dfife","Treow Wyrhta","Jambo","Otto","ewm","Eli Iser","Jacob Edmond","3Dave","jbord39","ww_init_js","Ashlar","Peter Grace","WhatRoughBeast","NipFu","LeeG","Doov","LosManos","TX Turner"],"index":[57,70,72,79,87,97,98,107,108,117,120,121,128,130,131,137,144,145,150,152,176,177,178,182,186,205,206,207,220,221,223,232,242,247,251,256,280,294,296]},"selected":{"id":"5544","type":"Selection"},"selection_policy":{"id":"5543","type":"UnionRenderers"}},"id":"5532","type":"ColumnDataSource"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"5525","type":"BoxAnnotation"},{"attributes":{},"id":"5521","type":"ResetTool"},{"attributes":{"below":[{"id":"5508","type":"CategoricalAxis"}],"left":[{"id":"5512","type":"LinearAxis"}],"outline_line_color":{"value":null},"renderers":[{"id":"5508","type":"CategoricalAxis"},{"id":"5511","type":"Grid"},{"id":"5512","type":"LinearAxis"},{"id":"5516","type":"Grid"},{"id":"5525","type":"BoxAnnotation"},{"id":"5536","type":"GlyphRenderer"}],"title":{"id":"5497","type":"Title"},"toolbar":{"id":"5523","type":"Toolbar"},"x_range":{"id":"5500","type":"FactorRange"},"x_scale":{"id":"5504","type":"CategoricalScale"},"y_range":{"id":"5502","type":"DataRange1d"},"y_scale":{"id":"5506","type":"LinearScale"}},"id":"5498","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"5517","type":"PanTool"},{"id":"5518","type":"WheelZoomTool"},{"id":"5519","type":"BoxZoomTool"},{"id":"5520","type":"SaveTool"},{"id":"5521","type":"ResetTool"},{"id":"5522","type":"HelpTool"}]},"id":"5523","type":"Toolbar"},{"attributes":{"overlay":{"id":"5525","type":"BoxAnnotation"}},"id":"5519","type":"BoxZoomTool"},{"attributes":{"plot":null,"text":"Histogram of Similarity Scores"},"id":"5497","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"5498","subtype":"Figure","type":"Plot"},"ticker":{"id":"5513","type":"BasicTicker"}},"id":"5516","type":"Grid"},{"attributes":{},"id":"5539","type":"CategoricalTickFormatter"}],"root_ids":["5498"]},"title":"Bokeh Application","version":"1.0.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('5602').textContent;
+                  var render_items = [{"docid":"02bb0be3-8a11-4cfc-8ff6-49d9bd7691b9","roots":{"5498":"a97ab28b-ae17-4f6d-b236-5c53931cadec"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html><!DOCTYPE html>
+<html>
+<body>
+
+<h1>Best Candidates for Marketing</h1>
+
+<p>Use the list below to select people for marketing</p>
+
+<h3> Health Site - Users Analysis</h3>
+
+</body>
+</html>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Username</th>
+      <th>SimilarityScore</th>
+      <th>Site</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>YviDe</td>
+      <td>0.295362</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>anongoodnurse</td>
+      <td>0.280142</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Kate Gregory</td>
+      <td>0.279715</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DoctorWhom</td>
+      <td>0.263026</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>JohnP</td>
+      <td>0.254257</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Carey Gregory</td>
+      <td>0.250722</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>kenorb</td>
+      <td>0.246954</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Jan</td>
+      <td>0.244932</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Shlublu</td>
+      <td>0.241480</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>LangLangC</td>
+      <td>0.241436</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Narusan</td>
+      <td>0.233958</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>TheEnvironmentalist</td>
+      <td>0.232295</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>rumtscho</td>
+      <td>0.227597</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Lucky</td>
+      <td>0.226564</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Dave Liu</td>
+      <td>0.226418</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>HDE 226868</td>
+      <td>0.225164</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Graham Chiu</td>
+      <td>0.223780</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Atl LED</td>
+      <td>0.222366</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Pobrecita</td>
+      <td>0.222242</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Count Iblis</td>
+      <td>0.221622</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>arkiaamu</td>
+      <td>0.214679</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Butterfly and Bones</td>
+      <td>0.212242</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Susan</td>
+      <td>0.209661</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Prince</td>
+      <td>0.209006</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Pills N Pillows</td>
+      <td>0.207047</td>
+      <td>health</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Chris</td>
+      <td>0.204672</td>
+      <td>health</td>
+    </tr>
+  </tbody>
+</table><!DOCTYPE html>
+<html>
+<body>
+
+  <h3> Woodworking Site - Users Analysis</h3>
+
+
+</body>
+</html>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Username</th>
+      <th>SimilarityScore</th>
+      <th>Site</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>57</th>
+      <td>Graphus</td>
+      <td>0.161329</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>FreeMan</td>
+      <td>0.152481</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>keshlam</td>
+      <td>0.150958</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>grfrazee</td>
+      <td>0.148736</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>bowlturner</td>
+      <td>0.145798</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>rob</td>
+      <td>0.138060</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>Dave Smylie</td>
+      <td>0.138024</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>Aloysius Defenestrate</td>
+      <td>0.134803</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>mmathis</td>
+      <td>0.134077</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>Daniel B.</td>
+      <td>0.131552</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>Ljk2000</td>
+      <td>0.130765</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>Charlie Kilian</td>
+      <td>0.130441</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>SaSSafraS1232</td>
+      <td>0.128996</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>jdv</td>
+      <td>0.128917</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>Ast Pace</td>
+      <td>0.128472</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>scanny</td>
+      <td>0.127557</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>Stoppal</td>
+      <td>0.126651</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>Ecnerwal</td>
+      <td>0.126282</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>WhatEvil</td>
+      <td>0.125115</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>Martin Bonner</td>
+      <td>0.123317</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>176</th>
+      <td>Doresoom</td>
+      <td>0.117003</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>177</th>
+      <td>dfife</td>
+      <td>0.116814</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>178</th>
+      <td>Treow Wyrhta</td>
+      <td>0.116666</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>182</th>
+      <td>Jambo</td>
+      <td>0.116138</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>186</th>
+      <td>Otto</td>
+      <td>0.115087</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>205</th>
+      <td>ewm</td>
+      <td>0.112981</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>Eli Iser</td>
+      <td>0.112563</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>Jacob Edmond</td>
+      <td>0.112145</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>220</th>
+      <td>3Dave</td>
+      <td>0.109770</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>221</th>
+      <td>jbord39</td>
+      <td>0.109557</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>223</th>
+      <td>ww_init_js</td>
+      <td>0.108984</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>232</th>
+      <td>Ashlar</td>
+      <td>0.107365</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>242</th>
+      <td>Peter Grace</td>
+      <td>0.106296</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>247</th>
+      <td>WhatRoughBeast</td>
+      <td>0.105591</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>251</th>
+      <td>NipFu</td>
+      <td>0.105115</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>256</th>
+      <td>LeeG</td>
+      <td>0.104820</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>280</th>
+      <td>Doov</td>
+      <td>0.102067</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>294</th>
+      <td>LosManos</td>
+      <td>0.100740</td>
+      <td>woodworking</td>
+    </tr>
+    <tr>
+      <th>296</th>
+      <td>TX Turner</td>
+      <td>0.100658</td>
+      <td>woodworking</td>
+    </tr>
+  </tbody>
+</table>

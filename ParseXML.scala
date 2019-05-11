@@ -1,6 +1,7 @@
 
 //val siteList = Seq("languagelearning.stackexchange.com.7z", "beer.stackexchange.com.7z","coffee.stackexchange.com.7z","health.stackexchange.com.7z")
-val siteList = Seq("biology.stackexchange.com.7z", "woodworking.stackexchange.com.7z","coffee.stackexchange.com.7z","health.stackexchange.com.7z")
+//val siteList = Seq("biology.stackexchange.com.7z", "woodworking.stackexchange.com.7z","coffee.stackexchange.com.7z","health.stackexchange.com.7z")
+val siteList = Seq("health.stackexchange.com.7z", "woodworking.stackexchange.com.7z")
 
 
 val firstRDD = getTextDF(siteList(0))

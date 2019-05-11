@@ -77,8 +77,8 @@ and
 
 sortedUsers.coalesce(1).write.csv("hdfs:///user/dm4350/project/coalesce1")
 
-hdfs dfs -ls /user/dm4350/project/coalesce1
-hdfs dfs -copyToLocal /user/dm4350/project/coalesce1/ /home/dm4350/project/
+hdfs dfs -ls /user/dm4350/project/coalesce3
+hdfs dfs -copyToLocal /user/dm4350/project/coalesce3/ /home/dm4350/project/
 
 
 
